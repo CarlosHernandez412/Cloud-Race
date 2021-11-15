@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "885259573664",
+    "project_id": "cloud-race-f22fc",
+    "storage_bucket": "cloud-race-f22fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885259573664:android:50329bf6cc8164d0146cc5",
+        "android_client_info": {
+          "package_name": "com.CloudRace.cloud_race"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885259573664-6t59oh5l94t562ui719k4ktt7qm2uf4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1PNRyvnKS1DS1Egq1Jo1kEJor3Lmr_Ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885259573664-6t59oh5l94t562ui719k4ktt7qm2uf4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
