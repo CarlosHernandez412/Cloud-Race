@@ -7,6 +7,7 @@ import './app_screens/homeScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_race/services/database.dart';
 
+
 void main() {
   // WidgetsFlutterBinding.ensureInitialized();
   runApp(CloudRaceApp());
