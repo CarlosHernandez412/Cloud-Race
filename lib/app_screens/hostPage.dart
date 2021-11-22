@@ -69,8 +69,23 @@ class FirestoreApp extends StatefulWidget {
 }
 
 class _FireStoreAppState extends State<FirestoreApp> {
+  //CollectionReference games = FirebaseFirestore.instance.collection('games');
+
+  Future<void> addGame(category) {
+    print(category);
+    return category;
+    // Call the user's CollectionReference to add a new user
+    /*return games
+          .add({
+            'category': quizTitle
+          })
+          .then((value) => print(value))
+          .catchError((error) => print("Failed to add user: $error"));*/
+  }
+
   @override
   Widget build(BuildContext context) {
+    //Future<void> createGame(category) { print(category) }
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -89,11 +104,17 @@ class _FireStoreAppState extends State<FirestoreApp> {
                 }
                 return ListView(
                   children: snapshot.data!.docs.map((documents) {
+                    print(documents);
                     return Center(
-                      child: ListTile(
-                        title: Text(documents['quizTitle']),
-                      ),
-                    );
+                        child: TextButton.icon(
+                            label: Text(documents['quizTitle']),
+                            icon: Icon(Icons.web),
+                            onPressed: () {
+                              addGame(documents['quizTitle']);
+                            }));
+                    print("inloop");
+                    //return TextButton(
+                    //style:
                   }).toList(),
                 );
               }),
